@@ -34,3 +34,24 @@
 .shop-category-left span {
     color: #ff4141;
 }
+
+.shop-category-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.shopcategory-banner {
+    align-self: flex-end;
+    margin: -300px 150px;
+    width: 350px;
+}
