@@ -81,3 +81,18 @@
     box-sizing: border-box;
     line-height: 30px;
 }
+
+.shopcategory-sort img {
+    width: 80px;
+}
+
+.shopcategory-product {
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    box-sizing: border-box;
+}
+.shopcategory-product img{
+    width: 300px;
+}
