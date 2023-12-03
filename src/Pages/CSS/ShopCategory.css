@@ -55,3 +55,29 @@
     margin: -300px 150px;
     width: 350px;
 }
+
+.shop-category-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0px 150px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px 0 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    line-height: 30px;
+}
