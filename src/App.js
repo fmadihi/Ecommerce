@@ -4,12 +4,13 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Shop from './Pages/shop';
 import Product from './Pages/product';
 import Cart from './Pages/cart';
-import loginSigneUp from './Pages/loginSigneUp';
 import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assests/man.jpg'
 import women_banner from './Components/Assests/women.jpg'
 import kid_banner from './Components/Assests/kid.jpg'
 import ShopCategory from './Pages/ShopCategory';
+import LoginSigneUp from './Pages/LoginSigneUp';
+
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route path='/productId' element={<Product />}/>
         </Route>
         <Route path='/cart' element={<Cart/>} />
-        <Route path='/loginSigneUp' element={<loginSigneUp/>} />
+        <Route path='/Login' element={<LoginSigneUp />} />
       </Routes>
       <Footer/>
       </BrowserRouter>
