@@ -1,27 +1,20 @@
-.relatedProduct{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
-    height: 90vh;
+import React from 'react'
+import './RelatedProduct.css'
+import data_product from '../Assests/data'
+import Item from '../Item/Item'
+
+const RelatedProduct = () => {
+  return (
+    <div className='relatedProduct'>
+        <h1>Related Poducts</h1>
+        <hr />
+        <div className="relatedProduct-item">
+            {data_product.map((item,i)=>{
+                return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
+            })}
+        </div>
+    </div>
+  )
 }
-.relatedProduct h1{
-    color: #171717;
-    font-size: 40px;
-    font-weight: 600;
-}
-.relatedProduct hr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
-}
-.relatedProduct-item{
-    margin: 50px 150px;
-    display: flex;
-    width: 80%;
-    gap:25px;
-}
-.relatedProduct-item img{
-    width: 240px;
-}
+
+export default RelatedProduct
