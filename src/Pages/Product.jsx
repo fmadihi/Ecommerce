@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import Breadcrums from '../Components/Breadcrums/Breadcrums';
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
+import RelatedProduct from '../Components/RelatedProduct/RelatedProduct';
 
 const Product = () => {
   const {all_product} = useContext(ShopContext);
@@ -14,6 +15,7 @@ const Product = () => {
       <Breadcrums product={product}/>
       <ProductDisplay product={product}/>
       <DescriptionBox />
+      <RelatedProduct/>
     </div>
   )
 }
